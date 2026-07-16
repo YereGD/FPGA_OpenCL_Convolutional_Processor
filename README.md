@@ -142,14 +142,22 @@ Para compilar y ejecutar este proyecto, necesitarás tener el SDK OpenCL para FP
 
 ## Resultados
 
-# Análisis comparativo del rendimiento 
+### Análisis comparativo del rendimiento 
+
 
 <img width="1038" height="371" alt="{A4C4110B-250C-482D-80C3-71F51B2D2AFE}" src="https://github.com/user-attachments/assets/d57edc32-83cc-4e5f-a052-fe0e9a4989d9" />
+
+
 
 <img width="700" height="568" alt="{1DB68EBE-2642-409C-BEBA-3A974FC27E13}" src="https://github.com/user-attachments/assets/b77a9421-7843-44bf-9686-93ad4b909602" />
 
 
-Estas son las latencias comparadas entre varias soluciones:
+### Análisis energ´etico comparativo
+
+<img width="1048" height="368" alt="{4100F35D-5FC7-4D80-A253-7959070F95A2}" src="https://github.com/user-attachments/assets/2ce6f552-8377-4eb1-acc8-ca1192461e15" />
+
+<img width="1028" height="604" alt="{CEB4D790-9C4E-4C4F-98A8-5F140DA044C7}" src="https://github.com/user-attachments/assets/95a6834b-971f-4872-8ae8-bb3fb2910784" />
+
 
 
 ### Base Float32
