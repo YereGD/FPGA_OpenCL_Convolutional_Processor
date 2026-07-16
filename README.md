@@ -126,7 +126,7 @@ Para compilar y ejecutar este proyecto, necesitarás tener el SDK OpenCL para FP
     aoc ProcessorCNNV8.cl
     ```
 
-3.  **Ejecutar el Pipeline:**
+3.  **Ejecutar el Pipeline (Se ha de tener en el mismo directorio los ficheros weights.bin, bias.bin, network_schedule.h y modelo_cola_cpu.onnx):**
     ```bash
     ./aplicacion
     ```
