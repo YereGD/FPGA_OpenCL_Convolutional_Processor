@@ -152,7 +152,7 @@ Para compilar y ejecutar este proyecto, necesitarás tener el SDK OpenCL para FP
 <img width="700" height="568" alt="{1DB68EBE-2642-409C-BEBA-3A974FC27E13}" src="https://github.com/user-attachments/assets/b77a9421-7843-44bf-9686-93ad4b909602" />
 
 
-### Análisis energ´etico comparativo
+### Análisis energético comparativo
 
 <img width="1048" height="368" alt="{4100F35D-5FC7-4D80-A253-7959070F95A2}" src="https://github.com/user-attachments/assets/2ce6f552-8377-4eb1-acc8-ca1192461e15" />
 
@@ -160,7 +160,4 @@ Para compilar y ejecutar este proyecto, necesitarás tener el SDK OpenCL para FP
 
 
 
-### Base Float32
-
-
-### Opencl Int8 primeras 3 convoluciones
+### Gifts de la ejecución de las diferentes soluciones
