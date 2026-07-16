@@ -142,7 +142,11 @@ Para compilar y ejecutar este proyecto, necesitarás tener el SDK OpenCL para FP
 
 ## Resultados
 
-Latencias
+# Análisis comparativo del rendimiento 
+
+<img width="1038" height="371" alt="{A4C4110B-250C-482D-80C3-71F51B2D2AFE}" src="https://github.com/user-attachments/assets/d57edc32-83cc-4e5f-a052-fe0e9a4989d9" />
+
+<img width="700" height="568" alt="{1DB68EBE-2642-409C-BEBA-3A974FC27E13}" src="https://github.com/user-attachments/assets/b77a9421-7843-44bf-9686-93ad4b909602" />
 
 
 Estas son las latencias comparadas entre varias soluciones:
