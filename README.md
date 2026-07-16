@@ -115,6 +115,7 @@ Para compilar y ejecutar este proyecto, necesitarás tener el SDK OpenCL para FP
     ```bash
     ./build.sh
     ```
+    Para emular la ejecución y comprobar que es correcta la arítmetica.
     ```bash
     ./build_emu.sh
     ```
