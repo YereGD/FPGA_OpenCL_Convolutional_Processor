@@ -1,10 +1,17 @@
-# FPGA_OpenCL_Convolutional_Processor
-
-
-
+# FPGA_OpenCL_Convolutional_Processo
 
 ## Sobre el Proyecto
 
+Este proyecto presenta el diseño, desarrollo e implementación de un **computador empotrado ligero de altas prestaciones y alta eficiencia energética** basado en una arquitectura System on Chip (SoC) reconfigurable. Desarrollado sobre la placa **Terasic DE1-SoC** (que integra un chip Intel Cyclone V SoC), el sistema está especializado en la ejecución en tiempo real de una red neuronal convolucional (CNN) optimizada para la **detección de caras humanas** a través de una cámara web estándar.
+
+Para superar el severo cuello de botella de acceso a memoria externa y las limitaciones térmicas características de los dispositivos en el extremo (*Edge AI*), este trabajo propone un **co-diseño hardware-software a medida** que trasciende las soluciones convencionales de propósito general:
+
+* **Acelerador Hardware en FPGA:** El núcleo del procesamiento convolucional pesado se ejecuta en la matriz lógica de la FPGA a través de un kernel monolítico OpenCL (*Single Work-Item*). Este procesador paramétrico cuenta con un camino de datos paralelo que despacha hasta **64 operaciones MAC (Multiplicación y Acumulación) por ciclo de reloj** en punto fijo de 8 bits (`INT8`). Implementa técnicas avanzadas de reutilización de datos como un búfer de pesos y un búfer circular (*Ring Buffer*) de píxeles mediante bloques de memoria local M10K.
+* **Pipeline Multihilo Asíncrono (CPU-FPGA):** En lugar de una ejecución síncrona y bloqueante, el sistema de software corre en el procesador ARM Cortex-A9 del SoC gestionando tres hilos de ejecución paralelos de Linux (`pthreads`). Mediante una estrategia de **doble búfer (*Ping-Pong Buffer*) en la RAM DDR3 compartida**, la FPGA calcula las capas de la red sobre el fotograma actual mientras la CPU realiza simultáneamente la captura del siguiente frame y el postprocesado del anterior.
+* **Compilador Offline Automatizado (Python):** Se incluye un script de automatización (`export_c.py`) que actúa como compilador cruzado. Este script analiza el grafo ONNX de la red neuronal, cuantifica linealmente los pesos y factores de escala flotantes al dominio de punto fijo, alinea las dimensiones a múltiplos de 16 para optimizar ráfagas DMA y genera una agenda estática de ejecución (`network_schedule.h`).
+* **Postprocesado Inteligente en Software:** El costoso cómputo de coma flotante se elimina de la FPGA. Tareas secuenciales como el paso de decuantización lineal ($r = S \times (q - Z)$) y la Supresión de No Máximos (NMS) se delegan y ejecutan de forma ultraveloz en la CPU ARM, mostrando finalmente las detecciones de forma asíncrona en un monitor TFT.
+
+El resultado es un sistema embebido autónomo y ligero que logra un excelente balance entre tasa de fotogramas por segundo (FPS), latencia de inferencia y consumo de potencia eléctrica frente a ejecuciones basadas puramente en software.
 
 ---
 
