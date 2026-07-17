@@ -161,3 +161,18 @@ Para compilar y ejecutar este proyecto, necesitarás tener el SDK OpenCL para FP
 
 
 ### Gifts de la ejecución de las diferentes soluciones
+
+Este proyecto
+
+<img width="640" height="480" alt="TFT2026" src="https://github.com/user-attachments/assets/5ddc81b2-4781-4dbe-99b7-b7665a05d318" />
+
+
+TFT 2025
+
+<img width="640" height="480" alt="tft2025" src="https://github.com/user-attachments/assets/3bfb5dc3-6457-4cbe-8c6b-2f3f27fd1e89" />
+
+
+CPU ARM ONNX Runtime
+
+<img width="640" height="480" alt="SoloCPU" src="https://github.com/user-attachments/assets/30fcad4b-8617-4c5e-9af6-d1acc74db8b0" />
+
