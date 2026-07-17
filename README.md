@@ -160,7 +160,7 @@ Para compilar y ejecutar este proyecto, necesitarás tener el SDK OpenCL para FP
 
 
 
-### Gifts de la ejecución de las diferentes soluciones
+### Gifts de ejecución de diferentes arquitecturas. 
 
 Este proyecto
 
